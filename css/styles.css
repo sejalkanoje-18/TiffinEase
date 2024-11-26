@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Global Styles */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    /* line-height: 1.6; */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #f4ffd7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+    background-image: url('');   /*Background image for hero section  */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.hero-content .btn {
+    background-color: #90c400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.hero-content .btn:hover {
+    background-color: #9fbaa0;
+}
+
+.hero-image img {
+    width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+}
+
+/* Style for Our Features Section */
+.features-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.8rem; /* Slightly larger font */
+    color: #333; /* Example color, you can change this */
+    margin-bottom: 40px; /* More spacing below */
+    font-weight: 600; /* Bold the text */
+    letter-spacing: 2px; /* Adds some spacing between letters */
+    position: relative; /* To add decoration (optional) */
+}
+
+.features-section h2::after {
+    content: "";
+    width: 100px; /* Length of underline */
+    height: 4px; /* Thickness of underline */
+    background-color: #333; /* Match the text color */
+    display: block;
+    margin: 10px auto 0; /* Space between text and underline */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 features per row */
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: #ff7043; /* Example color for icons */
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design for Tablets (Two columns on medium screens) */
+@media (max-width: 992px) {
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive Design for Mobile (One column on small screens) */
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.8rem; /* Slightly larger font */
+    color: #333; /* Example color, you can change this */
+    margin-bottom: 40px; /* More spacing below */
+    font-weight: 600; /* Bold the text */
+    letter-spacing: 2px; 
+    position: relative; 
+}
+
+.testimonials h2::after {
+    content: "";
+    width: 100px; /* Length of underline */
+    height: 4px; /* Thickness of underline */
+    background-color: #333; /* Match the text color */
+    display: block;
+    margin: 10px auto 0; /* Space between text and underline */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    max-width: 400px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.testimonial-item h3 {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #4CAF50;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+

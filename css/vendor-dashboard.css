@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.hero-vendor {
+    background: url('Frontend/images/vendorhero1.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: #5f0e0e;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.manage-menus,
+.manage-orders,
+.vendor-profile,
+.vendor-payments {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    background: #90c400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #9fc142;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

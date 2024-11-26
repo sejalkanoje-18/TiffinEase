@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Profile section styles */
+.profile {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-pic {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 2;
+    padding-left: 20px; /* Space between picture and info */
+}
+
+.profile-info label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.profile-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-save {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-content h2 {
+    margin: 0;
+}
+
+/* Hidden by default */
+.hidden {
+    display: none;
+}
+
+/* Style for the logout message (like a modal) */
+#logoutMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+}

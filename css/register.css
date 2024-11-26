@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Registration Section Styles */
+.register {
+    background-color: #fff;
+    width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register form input, 
+.register form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.register form button {
+    background-color: #90c400;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register form button:hover {
+    background-color: #555;
+}
+
+/* Link to Sign In */
+.register p {
+    margin-top: 15px;
+    color: #333;
+}
+
+.register p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}

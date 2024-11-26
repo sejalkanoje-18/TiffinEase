@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Dashboard Section */
+.dashboard {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.welcome-message h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #90c400;
+    font-style: italic;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.menu-section, .subscription-section, .order-history-section {
+    margin-bottom: 40px;
+}
+
+.today-menu {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.today-menu h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #f2f2f2;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+button {
+    padding: 5px 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.subscriptions {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.subscriptions h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subscription-overview {
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border: 2px solid #4CAF50; /* Green border to match the theme */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* More padding for a spacious feel */
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.subscription-overview h3 {
+    font-size: 24px; /* Larger font size for section title */
+    color: #333; /* Darker text color */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.subscription-overview p {
+    font-size: 18px; /* Slightly larger font size for details */
+    color: #555; /* Softer text color for details */
+    line-height: 1.6; /* Increased line height for readability */
+    margin: 5px 0; /* Vertical spacing between paragraphs */
+}
+
+.subscription-overview .plan-detail {
+    background-color: #fff; /* White background for details */
+    padding: 10px; /* Padding inside details */
+    border-radius: 5px; /* Rounded corners for detail boxes */
+    margin: 10px 0; /* Space between details */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.subscription-overview .plan-detail:hover {
+    background-color: #e9f5e9; /* Light green background on hover */
+}
+
+.manage-subscription {
+    background-color: #f2f2f2; /* Light background for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.manage-subscription h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.subscription-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.monthly-fee {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.btn-cancel,
+.btn-extend,
+.btn-explore,
+.btn-payment {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width buttons */
+}
+
+.btn-cancel {
+    background-color: #dc3545; /* Red for cancel */
+    color: white;
+}
+
+.btn-extend {
+    background-color: #ffc107; /* Yellow for extend */
+}
+
+.btn-explore {
+    background-color: #28a745; /* Green for explore */
+    color: white;
+}
+
+.btn-payment {
+    background-color: #007bff; /* Blue for payment */
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.btn-extend:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.btn-explore:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.btn-payment:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+.subscription-overview,
+.subscription-management,
+.order-history {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #90c400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #a4c744;
+}
+
+/* Payment Methods Section */
+.payment-methods {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px 100px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the section */
+}
+
+.payment-methods h3 {
+    margin-bottom: 15px; /* Space below the heading */
+    font-size: 24px; /* Larger font size for heading */
+    color: #333; /* Darker color for better readability */
+}
+
+.payment-methods ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-bottom: 20px; /* Space below the list */
+}
+
+.payment-methods li {
+    padding: 10px 0; /* Space between list items */
+    border-bottom: 1px solid #ddd; /* Separator line */
+    color: #555; /* Grey color for text */
+}
+
+.payment-methods li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.payment-methods button {
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color for buttons */
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.payment-methods button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.payment-methods button:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Focus outline with shadow */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+

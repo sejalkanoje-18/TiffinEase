@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.payment-billing {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.bill-summary {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+}
+
+.bill-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.1em;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.btn-bill-payment,
+.btn-add-payment,
+.btn-make-payment {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-bill-payment:hover,
+.btn-add-payment:hover,
+.btn-make-payment:hover {
+    background-color: #45a049;
+}
+
+.payment-options {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+.payment-methods,
+.add-payment-method,
+.proceed-payment {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="month"],
+input[type="password"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="month"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .payment-billing {
+        padding: 15px;
+    }
+
+    .btn-bill-payment,
+    .btn-add-payment,
+    .btn-make-payment {
+        font-size: 14px;
+    }
+}
